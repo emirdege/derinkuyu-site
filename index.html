@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Derinkuyu · 100.000 oda</title>
+<meta name="description" content="Derinkuyu'nun altında 100.000 oda var. Yoruma bir sayı yaz, odanı al. Sona kalan, bir sonraki hikâyenin başrolü olacak.">
+<meta property="og:title" content="Derinkuyu · 100.000 oda">
+<meta property="og:description" content="Sayını iyi seç. Sona kalan, bir sonraki hikâyenin başrolü olacak.">
+<meta name="theme-color" content="#0d0907">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div class="toz" aria-hidden="true"></div>
+
+<header class="ust">
+  <div class="marka">DERİNKUYU</div>
+  <div class="sayac"><span id="toplam">0</span></div>
+  <div class="sayac-alt">/ 100.000 sakin</div>
+  <div class="cubuk" aria-hidden="true"><div id="dolum"></div></div>
+  <div class="durumlar">
+    <div class="durum"><b id="kalan">0</b><span>hayatta</span></div>
+    <div class="durum"><b id="karanlik">0</b><span>karanlıkta</span></div>
+    <div class="durum"><b id="bos">100.000</b><span>boş oda</span></div>
+  </div>
+  <p class="hook">Sayını iyi seç. <em>Sona kalan, bir sonraki hikâyenin başrolü olacak.</em></p>
+</header>
+
+<main>
+  <section id="son-bolum" class="kart gizli">
+    <div class="etiket" id="bolum-etiket">SON BÖLÜM</div>
+    <video id="video" controls playsinline preload="metadata"></video>
+    <p id="kanca" class="kanca"></p>
+  </section>
+
+  <section id="kural" class="kart">
+    <div class="etiket">NASIL OYNANIR</div>
+    <ol class="adimlar">
+      <li><b>Sayını seç.</b> 1 ile 100.000 arası. Sayın hangi katta yaşayacağını belirler.</li>
+      <li><b>Son bölümün altına yorum yaz.</b> O sayıyı ilk yazan alır, kapına adın yazılır. Her hesap tek oda.</li>
+      <li><b>Hayatta kal.</b> 9. kat her bölüm odaları karartır. Bazılarını şans seçer, bazılarını siz.</li>
+    </ol>
+    <a id="ig-git" class="dugme" href="https://www.instagram.com/derinkuyu100bin/" target="_blank" rel="noopener">Instagram'a git ve yorum yaz</a>
+  </section>
+
+  <section id="kontrol" class="kart">
+    <div class="etiket">SAYIN BOŞ MU?</div>
+    <form id="no-form" autocomplete="off">
+      <input id="no" class="buyuk-giris" required inputmode="numeric" maxlength="7" placeholder="ör. 45120" aria-label="Oda numarası">
+      <button type="submit">Bak</button>
+    </form>
+    <div id="no-sonuc" class="sonuc gizli" role="status"></div>
+  </section>
+
+  <section id="harita" class="kart">
+    <div class="etiket">ŞEHRİN KESİTİ</div>
+    <p class="soluk">Her katta 12.500 oda. Sayın büyüdükçe derine inersin.</p>
+    <div id="katlar" class="katlar"></div>
+    <p id="muhurler" class="soluk gizli"></p>
+    <p class="soluk kucuk">Son gelenler: <span id="son-gelenler">henüz kimse yok</span></p>
+  </section>
+
+  <section id="bul" class="kart">
+    <div class="etiket">HAYATTA MISIN?</div>
+    <form id="bul-form" autocomplete="off">
+      <div class="giris"><span>@</span><input id="bul-q" required maxlength="31" placeholder="kullanıcı adın" autocapitalize="none" spellcheck="false" aria-label="Kullanıcı adı"></div>
+      <button type="submit">Bak</button>
+    </form>
+    <div id="bul-sonuc" class="sonuc gizli" role="status"></div>
+    <div id="kapi-kutu" class="gizli">
+      <canvas id="kapi" width="1080" height="1920" aria-label="Oda kapın"></canvas>
+      <a id="indir" class="dugme ikincil" download="derinkuyu-odam.png">Kapını indir (story için)</a>
+    </div>
+  </section>
+
+  <section id="oylama" class="kart gizli">
+    <div class="etiket">BU BÖLÜMÜN KARARI</div>
+    <p id="soru" class="soru"></p>
+    <div id="secenekler" class="secenekler"></div>
+    <p id="oy-durum" class="soluk"></p>
+  </section>
+
+  <section id="gizli-kapi" class="kart">
+    <div class="etiket">GİZLİ KAPI</div>
+    <p class="soluk">Her bölümde videonun bir köşesine 4 haneli bir sayı kazınır. Bulursan buraya yaz.</p>
+    <form id="kod-form" autocomplete="off">
+      <div class="giris"><span>@</span><input id="kod-kullanici" required maxlength="31" placeholder="kullanıcı adın" autocapitalize="none" spellcheck="false" aria-label="Kullanıcı adı"></div>
+      <input id="kod" class="kod" required inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="····" aria-label="Kod">
+      <button type="submit">Kapıyı dene</button>
+    </form>
+    <p id="kod-sonuc" role="status"></p>
+  </section>
+
+  <section id="arsiv" class="kart gizli">
+    <div class="etiket">BÖLÜMLER</div>
+    <ol id="bolumler" reversed></ol>
+  </section>
+</main>
+
+<footer>
+  <p><a href="https://www.instagram.com/derinkuyu100bin/" target="_blank" rel="noopener">@derinkuyu100bin</a></p>
+  <p class="soluk kucuk">Kurgu bir hikâyedir. <a href="gizlilik.html">Gizlilik</a></p>
+</footer>
+
+<script src="ayar.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
