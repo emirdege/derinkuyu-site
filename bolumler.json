@@ -1,0 +1,66 @@
+[
+  {
+    "bolum": 8,
+    "kanca": "İlk karartmaya 2 bölüm kaldı",
+    "soru": "Kurala kim karar versin?",
+    "secim": null,
+    "yuzde": null,
+    "video_url": "https://emirdege.github.io/derinkuyu-site/video/bolum-008.mp4"
+  },
+  {
+    "bolum": 7,
+    "kanca": "Havalandırmadan gelen ses tam senin sesine benziyor.",
+    "soru": "Uyarıyı herkese duyuralım mı?",
+    "secim": "Herkes duysun",
+    "yuzde": null,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-007.mp4"
+  },
+  {
+    "bolum": 6,
+    "kanca": "Kayıt defterinde aynı oda iki kez yazılı.",
+    "soru": "Defteri kime emanet edelim?",
+    "secim": "En eski sakine",
+    "yuzde": 100,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-006.mp4"
+  },
+  {
+    "bolum": 5,
+    "kanca": "Notu 3 kişi çözdü.",
+    "soru": "Aralık kapıyı ne yapalım?",
+    "secim": "İçeri bakalım",
+    "yuzde": null,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-005.mp4"
+  },
+  {
+    "bolum": 4,
+    "kanca": "%75'imiz sessiz kalalım dedi ve kapıya vurduk.",
+    "soru": "Notu birlikte çözelim mi?",
+    "secim": "Sitede çözelim",
+    "yuzde": 100,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-004.mp4"
+  },
+  {
+    "bolum": 3,
+    "kanca": "İlk karartmaya 7 bölüm kaldı.",
+    "soru": "Kapıya cevap verelim mi?",
+    "secim": "Sessiz kalalım",
+    "yuzde": 75,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-003.mp4"
+  },
+  {
+    "bolum": 2,
+    "kanca": "11 sakin indik, duvarda 12 nefes sayılıyor.",
+    "soru": "Fazladan kişiyi arayalım mı?",
+    "secim": "Arayalım",
+    "yuzde": 100,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-002.mp4"
+  },
+  {
+    "bolum": 1,
+    "kanca": "Derinkuyu'nun altında 100.000 boş oda bulundu.",
+    "soru": "",
+    "secim": null,
+    "yuzde": null,
+    "video_url": "https://github.com/emirdege/derinkuyu-site/releases/download/arsiv/bolum-001.mp4"
+  }
+]
